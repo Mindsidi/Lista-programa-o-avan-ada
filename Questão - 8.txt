@@ -1,0 +1,7 @@
+QUestão 8. Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas? Justifique.
+
+
+	p = mat + 1;    //Legal
+	p = mat++;      //Ilegal, não pode incrementar valor do tipo int ao ponteiro.
+	p = ++mat;      //Ilegal, não pode incrementar valor do tipo int ao ponteiro.
+	x = (*mat)++;   //Ilegal, não pode incrementar valor do tipo int ao ponteiro.

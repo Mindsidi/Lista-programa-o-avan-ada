@@ -1,0 +1,6 @@
+Questão 1.Qual a utilidade do aprendizado do uso de ponteiro para aplicações em engenharia?
+
+A parti do uso de ponteiros os engenheiros de elétrica podem criar códigos que uma variável pode ser acessada em diferentes partes do programa,porém esse dado que 
+estiver no local de memória apontado sofrer alguma alteração, não vai ter problema, pois os ponteiro espalhados no programa apontam para o endereço de memória e não 
+exatamente para o valor, oque tras novas possibilidades e formas de otimizar o código.
+  

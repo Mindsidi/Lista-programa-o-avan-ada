@@ -1,0 +1,23 @@
+Questão 12. Suponha que as seguintes declarações tenham sido realizadas:
+
+	float aloha[10], coisas[10][5], *pf, value = 2.2;
+	int i=3;
+
+	Identifique quais dos seguintes comandos é válido ou inválido:
+
+	aloha[2] = value;	// válido
+	
+	scanf("%f", &aloha); 	// válido, porém se o vetor não for preenchido pode aparecer valores estranhos na saída (lixo). 
+	
+	aloha = value";		// inválido, pois uma variável do tipo vetor não pode receber um valor sem especificar o endereço da posição do vetor.
+	
+	printf("%f", aloha);	// válido
+	
+	coisas[4][4] = aloha[3];// válido
+	
+	coisas[5] = aloha;	// inválido, pois cada posição do vetor se comporta como uma variável simples, ou seja, não pode atribuir, a uma variável, um vetor. 
+	
+	pf = value;		// inválido, pois há imcompatibilidade do tipo das variáveis.A variável 'pf' é do tipo ponteiro, que no caso só pode receber 
+                                //valores do tipo inteiro.
+	
+	pf = aloha;		// válido.

@@ -1,0 +1,29 @@
+Questão 13. O que é um ponteiro para uma função? Pesquise na Internet referências sobre o assunto e escreva um 
+pequeno programa exemplificando o uso deste recurso.
+
+	Uma função é uma sequencia de códigos que possuem um espaço reservado na memória. Um ponteiro para função aponta para uma função, ou seja, 
+        assim como nos ponteiros para variáveis, podemos declarar ponteiros no códigos e fazer apontar para alguma função de modo que o ponteiro venha a ter a mesma 
+        sequencia lógica da função apontada.
+
+	Exemplo: 
+	
+	int qualoMaior(int x, int y){
+    	    if(x>y){
+       	        return x;
+   	    }
+   	    else if(y>x){
+                return y;
+    	    }
+    	    else{
+	        return 0;
+   	    }
+	}
+	int main(){
+    	   int (*ponteiroFunc)(int, int);
+    	   int x;
+
+    	   ponteiroFunc=qualoMaior;
+
+    	   x = ponteiroFunc(13, 13);
+    	   printf("%d \n\n", x);
+	}

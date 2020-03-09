@@ -1,0 +1,4 @@
+Questão 7. Assumindo que pulo[] é um vetor do tipo int, quais das seguintes expressões referenciam o valor do terceiro elemento do vetor?
+
+
+//Resultado: *(pulo + 2);
